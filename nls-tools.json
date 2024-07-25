@@ -1,0 +1,35 @@
+{
+    "langsPriority": ["en", "ru", "az"],
+    "io": {
+        "root": "io",
+        "csv": {
+            "delimiter": "--",
+            "directory": "csv",
+            "heading": {
+                "key": "key",
+                "status": "status"
+            },
+            "status": {
+                "translated": "✓",
+                "notTranslated": "missing"
+            }
+        },
+        "translate": {
+            "delimiter": "--",
+            "exportFilename": "to_translate.txt",
+            "importFilename": "translated.txt"
+        }
+    },
+    "keySeparator": ".",
+    "mark": {
+        "explicitCommon": false,
+        "quoteChar": "'"
+    },
+    "root": "src/assets/nls",
+    "suffix": {
+        "marked": "**",
+        "notTranslated": "++",
+        "toDelete": "--"
+    },
+    "tabSymbol": "    "
+}

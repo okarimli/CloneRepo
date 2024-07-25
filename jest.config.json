@@ -1,0 +1,27 @@
+{
+    "globals": {
+        "PLATFORM_VERSION": "",
+        "ts-jest": {
+            "diagnostics": {
+                "ignoreCodes": [151001]
+            }
+        }
+    },
+    "coverageDirectory": "build/sonar",
+    "modulePathIgnorePatterns": ["<rootDir>/tools/"],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "moduleNameMapper": {
+        "\\.(css|less|scss)$": "identity-obj-proxy",
+        "@pashabank/ui-library/(.*)$": "<rootDir>/node_modules/@pashabank/ui-library"
+    },
+    "modulePaths": ["<rootDir>/src"],
+    "setupFiles": ["<rootDir>/configs/enzyme.shim.js", "<rootDir>/configs/enzyme.config.js", "jest-localstorage-mock"],
+    "testMatch": ["**/__tests__/**/*.spec.(ts|tsx|js)"],
+    "testURL": "http://localhost",
+    "transform": {
+        "^.+\\.(ts|tsx)$": "ts-jest",
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/configs/enzyme.transform.js"
+    },
+    "verbose": true,
+    "testEnvironment": "jest-environment-jsdom-sixteen"
+}
